@@ -1,0 +1,33 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+#heading1 {
+    background-color: gray;
+    font-size: 17px;
+}
+
+#footer {
+    background-color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+canvas {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 3px 10px gold;
+}
+
+VIDEO {
+    border: 2px solid white;
+    box-shadow: -10px 3px 10px gold;
+    border-radius: 10px;
+    background-color: white;
+}
