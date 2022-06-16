@@ -21,9 +21,11 @@ function setup(){
 
 
 function draw(){
-  square(nose_x, nose_y, size_of_square)
-  stroke(223,97,111,255)
-  fill(223,97,111,255)
+  background("#033967");
+  stroke(223,97,111);
+  fill(223,97,111);
+  square(nose_x, nose_y, size_of_square);
+
 }
 
 function modelLoaded(){
@@ -41,7 +43,7 @@ function gotPoses(results){
         console.log("leftHand x = " + results[0].pose.leftWrist.x);
         lh_x = results[0].pose.leftWrist.x;
         rh_x = results[0].pose.rightWrist.x;
-        size_of_square = Math.round(lh_x-rh_x);
+        size_of_square = Math.floor(lh_x-rh_x);
         console.log("Size of square = " + size_of_square);
         document.getElementById("size1").innerHTML = "Width and Height of the Square = " + size_of_square;
     }
